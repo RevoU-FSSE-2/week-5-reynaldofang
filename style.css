@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: #13161a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,7 @@
 }
 
 header {
-  background-color: #13161a;
+  background-color: var(--main-bg-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,7 +26,7 @@ header {
 }
 
 .header_content img {
-  width: 60x;
+  width: auto;
   height: 60px;
   display: inline-block;
 }
@@ -34,15 +38,6 @@ body {
   margin: 0;
   padding-top: 60px;
   transition: background-color 0.3s ease;
-}
-
-.logo {
-  color: #fff;
-  text-align: center;
-  font-size: 23px;
-  letter-spacing: -1.5px;
-  font-weight: 120;
-  text-decoration: none;
 }
 
 /** Nav **/
@@ -101,6 +96,31 @@ body {
 
 .hamburger_open .bar:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
+}
+
+/** section about */
+
+.sec-about {
+  height: auto;
+  min-height: unset;
+  display: flex;
+  margin-top: 50px;
+}
+
+.about-desc {
+  padding: 10px;
+  flex: 40%;
+}
+
+.about-detail{
+  display: grid;
+  width: 50%;
+  grid-template-columns: auto auto auto;
+  height: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid #000;
 }
 
 footer {
