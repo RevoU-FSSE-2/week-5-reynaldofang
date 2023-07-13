@@ -29,9 +29,6 @@
             <li>
               <a class="nav_link" href="#about">About</a>
             </li>
-            <li>
-              <a class="nav_link" href="#gallery">Gallery</a>
-            </li>
             <li><a class="nav_link" href="#contact">Contact</a></li>
             <li>
               <button
@@ -73,25 +70,136 @@
           <button class="indicator" data-slide-index="2"></button>
         </div>
       </section>
-      <section class="sec-about" id="">
-        <div class="about-desc">
+      <section class="sec-detail">
+        <div class="detail-desc">
           <p>
-            <b>Skilldemy</b> server as a platform which allows learns from all
-            ages to learn various skills through our innovative vocational
-            <b>classes, seminars and workshops. </b>
+            Skilldemy is a platform that offers a wide range of learning
+            opportunities for individuals of all ages. It serves as a
+            server-based platform where learners can acquire diverse skills
+            through innovative vocational methods such as
+            <b>classes, seminars, and workshops.</b>
           </p>
         </div>
-        <div class="about-desc">
+        <div class="detail-desc">
           <div class="grid-desc">
-            <div class="about-detail">
-              <img src="icon/apply.png" class="icon" alt="" />Apply
+            <div class="card-detail">
+              <div class="item-detail">
+                <img src="icon/instructor.png" class="icon" alt="apply" />
+                <b>Expert-Led Instruction</b>
+                <p>
+                  Learn directly from industry experts in their respective
+                  fields.
+                </p>
+              </div>
             </div>
-            <div class="about-detail">test</div>
-            <div class="about-detail">test</div>
-            <div class="about-detail">test</div>
+            <div class="card-detail">
+              <div class="item-detail">
+                <img src="icon/learning.png" class="icon" alt="training" />
+                <b>Practical Learning</b>
+                <p>
+                  Acquire practical skills through interactive training
+                  sessions.
+                </p>
+              </div>
+            </div>
+            <div class="card-detail">
+              <div class="item-detail">
+                <img src="icon/networking.png" class="icon" alt="networking" />
+                <b>Networking Opportunities</b>
+                <p>
+                  Connect with professionals, mentors, and like-minded
+                  individuals.
+                </p>
+              </div>
+            </div>
+            <div class="card-detail">
+              <div class="item-detail">
+                <img
+                  src="icon/certificate.png"
+                  class="icon"
+                  alt="certificate"
+                />
+                <b>Recognized Certifications</b>
+                <p>
+                  Obtain certifications upon completion to validate your skills
+                  and enhance your credentials.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- section about us -->
+      <section class="about-container" id="about">
+        <div class="card card0">
+          <div class="border">
+            <h2>Albert Sugiat</h2>
+            <h3>CEO</h3>
+          </div>
+        </div>
+        <div class="card card1">
+          <div class="border">
+            <h2>Reynaldo Fang</h2>
+            <h3>CTO</h3>
+          </div>
+        </div>
+        <div class="card card2">
+          <div class="border">
+            <h2>Celin Tandra</h2>
+            <h3>COO</h3>
+          </div>
+        </div>
+      </section>
+
+      <form method="post" action="">
+        <section id="contact">
+          <div class="container-contact custom-background">
+            <h2><i class="far fa-envelope"></i> Send Your Data Here</h2>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              minlength="3"
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+            />
+            <label for="birth">Your Birthday</label>
+            <input
+              type="date"
+              id="birth"
+              min="1974-07-01"
+              max="2023-07-01"
+              required
+            />
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              placeholder="Enter your message"
+              required
+              minlength="10"
+            ></textarea>
+            <label for="country">Country :</label>
+            <select name="country" id="country" required>
+              <option value="">None</option>
+              <option value="indonesia">Indonesia</option>
+              <option value="singapore">Singapore</option>
+              <option value="japan">Japan</option>
+              <option value="usa">USA</option>
+            </select>
+            <div class="button-contact">
+              <button onclick="submitForm()">Submit</button>
+            </div>
+          </div>
+        </section>
+      </form>
     </main>
     <footer>Copyright by Reynaldo Fang © 2023</footer>
     <script src="script.js"></script>
