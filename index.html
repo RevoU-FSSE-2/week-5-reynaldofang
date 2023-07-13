@@ -52,27 +52,49 @@
       </div>
     </header>
     <main>
+      <section class="carousel" id="home">
+        <div class="carousel-container">
+          <div class="carousel-item active">
+            <img src="img/photo_4.png" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/photo_2.png" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="img/photo_1.png" alt="" />
+          </div>
+        </div>
+
+        <button class="carousel-arrow prev">&#8249;</button>
+        <button class="carousel-arrow next">&#8250;</button>
+        <div class="carousel-indicators">
+          <button class="indicator active" data-slide-index="0"></button>
+          <button class="indicator" data-slide-index="1"></button>
+          <button class="indicator" data-slide-index="2"></button>
+        </div>
+      </section>
       <section class="sec-about" id="">
         <div class="about-desc">
-          <p class="">
+          <p>
             <b>Skilldemy</b> server as a platform which allows learns from all
             ages to learn various skills through our innovative vocational
             <b>classes, seminars and workshops. </b>
           </p>
         </div>
         <div class="about-desc">
-          <div class="about-detail">test</div>
-          <div class="about-detail">test</div>
-          <div class="about-detail">test</div>
-          <div class="about-detail">test</div>
-          <div class="about-detail">test</div>
-          <div class="about-detail">test</div>
-          <div class="about-detail">test</div>
-          <div class="about-detail">test</div>
+          <div class="grid-desc">
+            <div class="about-detail">
+              <img src="icon/apply.png" class="icon" alt="" />Apply
+            </div>
+            <div class="about-detail">test</div>
+            <div class="about-detail">test</div>
+            <div class="about-detail">test</div>
+          </div>
         </div>
       </section>
     </main>
     <footer>Copyright by Reynaldo Fang © 2023</footer>
     <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </body>
 </html>
