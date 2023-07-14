@@ -19,9 +19,6 @@ header {
   z-index: 1;
 }
 
-
-
-
 .header_content {
   display: flex;
   align-items: center;
@@ -123,9 +120,10 @@ body {
 .carousel-item img {
   display: block;
   margin: 0 auto;
-  width: auto;
+  width: 2200px;
   max-width: 100%;
-  height: auto;
+  height: 800px;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -151,21 +149,19 @@ body {
 }
 
 .carousel-arrow {
+  cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-  border: none;
+  width: auto;
+  margin: -1.5em 0.3em 0 0.3em;
+  padding: 1em;
   color: white;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: 0.3s ease;
+  border-radius: 0.5em;
+  user-select: none;
+  background-color: var(--header-bg);
 }
 
 .carousel-arrow.prev {
@@ -176,13 +172,18 @@ body {
   right: 10px;
 }
 
+.carousel-arrow:hover {
+  box-shadow: 0 0 5px #fff;
+  border: 5px solid silver;
+}
+
 /** section about */
 
 .sec-detail {
   height: auto;
   min-height: unset;
   display: flex;
-  margin: 200px 100px;
+  margin: 200px 100px 0 100px;
 }
 
 .sec-item {
@@ -211,7 +212,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 25px;
+  gap: 50px;
   height: auto;
 }
 
@@ -224,12 +225,14 @@ body {
   text-align: center;
   border: 1px solid #000;
   border-radius: 25px;
-  transition: background-color 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
   height: auto;
 }
 
 .card-detail:hover {
-  background-color: #e0e0e0;
+  box-shadow: 0 0 10px rgba(253, 253, 253, 0.3), 0 0 20px rgba(0, 0, 0, 0.2),
+    0 0 30px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
 }
 
 .item-detail {
@@ -244,6 +247,7 @@ body {
   color: gray;
   font-size: 20px;
   text-align: center;
+  font-family: var(--body-font);
 }
 
 .icon {
@@ -261,7 +265,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 600px auto;
+  margin: 600px auto 0 auto;
   padding: 120px;
 }
 
@@ -380,7 +384,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   position: relative;
-  margin: 0 auto 60px auto;
+  margin: 800px auto 60px auto;
 }
 
 .container-contact h2 {

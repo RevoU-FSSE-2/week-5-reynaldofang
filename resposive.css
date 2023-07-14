@@ -20,7 +20,6 @@
 
 /* Contoh aturan CSS sebelum media query */
 
-
 @media screen and (max-width: 1024px) {
   /* Aturan CSS untuk layar dengan lebar maksimum 1024px */
 
@@ -100,6 +99,13 @@
 
   .card-detail {
     margin: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-detail:hover {
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.3), 0 0 20px rgba(0, 0, 0, 0.2),
+      0 0 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
   }
 
   .item-detail {
@@ -279,6 +285,13 @@
 
   .card-detail {
     margin: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-detail:hover {
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.3), 0 0 20px rgba(0, 0, 0, 0.2),
+      0 0 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
   }
 
   .item-detail {
@@ -286,7 +299,7 @@
   }
 
   .item-detail p {
-    font-size: ;
+    font-size: 1.2rem;
   }
 
   .about-container {
@@ -366,6 +379,13 @@
 
   .card-detail {
     flex: 1 1 50%;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-detail:hover {
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.3), 0 0 20px rgba(0, 0, 0, 0.2),
+      0 0 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
   }
 }
 
@@ -460,6 +480,16 @@
     text-align: center;
   }
 
+  .carousel-item img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+
+    object-fit: contain;
+  }
+
   .detail-desc p {
     font-size: 14px;
     width: 100%;
@@ -474,6 +504,13 @@
 
   .card-detail {
     margin: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card-detail:hover {
+    box-shadow: 0 0 10px rgba(253, 253, 253, 0.3), 0 0 20px rgba(0, 0, 0, 0.2),
+      0 0 30px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
   }
 
   .item-detail {
