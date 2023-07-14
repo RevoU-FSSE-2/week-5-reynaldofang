@@ -177,17 +177,14 @@ So I made three media queries:
 
 Below, I will show the view that I created.
 
-<figure>
-  <img src="screenshot/media_mobile.png" alt="mobile device" style="display:block; margin: 0px auto;">  
-  <figcaption style="text-align: center;">For Mobile Screen Sizes </figcaption>
-</figure>
+#### For Mobile Screen Sizes
 
-<figure>
-  <img src="screenshot/media_table.png" alt="table or ipad devices" style="display:block; margin: 0px auto;">  
-  <figcaption style="text-align: center;">For Tablet or Ipad Screen Sizes </figcaption>
-</figure>
+![for mobile screen](screenshot/media_mobile.png)
 
-<figure>
-  <img src="screenshot/media_laptop.png" alt="laptop screen size" style="display:block; margin: 0px auto;">  
-  <figcaption style="text-align: center;">For Laptop Screen Size </figcaption>
-</figure>
+#### For Mobile Screen Sizes
+
+![for tablet screen](screenshot/media_table.png)
+
+#### For Mobile Screen Sizes
+
+![for laptop screen](screenshot/media_laptop.png)
