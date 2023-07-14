@@ -1,3 +1,19 @@
+/** hamburger */
+const navEl = document.querySelector(".nav");
+const hamburgerEl = document.querySelector(".hamburger");
+
+hamburgerEl.addEventListener("click", () => {
+  navEl.classList.toggle("nav_open");
+  hamburgerEl.classList.toggle("hamburger_open");
+});
+
+navEl.addEventListener("click", () => {
+  navEl.classList.remove("nav_open");
+  hamburgerEl.classList.remove("hamburger_open");
+});
+
+/** carousel */
+
 const carouselContainer = document.querySelector(".carousel-container");
 const indicators = document.querySelectorAll(".indicator");
 const prevArrow = document.querySelector(".carousel-arrow.prev");
@@ -77,3 +93,14 @@ navLinks.forEach((link) => {
     });
   });
 });
+
+// Dapatkan elemen navigasi saat ini
+const currentNavItem = document.querySelector(".nav_link.active");
+
+// Hapus kelas "active" dari elemen navigasi saat ini
+if (currentNavItem) {
+  currentNavItem.classList.remove("active");
+}
+
+// Tambahkan kelas "active" ke elemen navigasi yang diklik
+link.classList.add("active");

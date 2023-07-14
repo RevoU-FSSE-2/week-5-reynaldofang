@@ -1,0 +1,156 @@
+/* CSS sebelum media query */
+
+/* Contoh aturan CSS sebelum media query */
+
+@media (max-width: 320px) {
+    /* Aturan CSS untuk layar dengan lebar maksimum 320px */
+  
+    /* Contoh aturan CSS khusus untuk layar dengan lebar maksimum 320px */
+    header {
+      height: 80px;
+    }
+  
+    .header_content {
+      padding: 0 20px;
+      height: 80px;
+    }
+  
+    .header_content img {
+      height: 50px;
+    }
+  
+    .nav_list {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .hamburger .bar {
+      width: 20px;
+    }
+  
+    .nav_open {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--header-bg);
+      z-index: 2;
+      overflow-y: auto;
+      padding: 20px;
+    }
+  
+    .nav_open .nav_list {
+      display: block;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+  
+    .nav_link {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .active {
+      color: rgba(255, 255, 255, 0.75);
+    }
+  
+    /* Aturan CSS tambahan pada media query */
+    body {
+      padding-top: 80px;
+    }
+  
+    .sec-detail {
+      margin: 50px;
+    }
+  
+    .detail-desc p {
+      font-size: 20px;
+    }
+  
+    .grid-desc {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .card-detail {
+      margin: 20px;
+    }
+  
+    .item-detail p {
+      font-size: 16px;
+    }
+  
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      margin-bottom: 30px;
+    }
+  
+    .border {
+      height: 300px;
+      width: 250px;
+    }
+  
+    .border:hover {
+      border: none;
+    }
+  
+    .card0,
+    .card1,
+    .card2 {
+      background-position: center;
+      background-size: 300px;
+    }
+  
+    .card0:hover,
+    .card1:hover,
+    .card2:hover {
+      background-position: left;
+      background-size: 400px;
+    }
+  
+    .about-container h2 {
+      margin: 10px;
+      font-size: 24px;
+    }
+  
+    .about-container h3 {
+      margin: 10px;
+      font-size: 20px;
+    }
+  
+    .fab {
+      display: none;
+    }
+  
+    .container-contact {
+      margin: 20px auto;
+    }
+  
+    label,
+    input,
+    textarea {
+      font-size: 14px;
+    }
+  
+    select {
+      font-size: 14px;
+    }
+  
+    .button-contact button {
+      font-size: 14px;
+    }
+  
+    footer {
+      padding: 10px 0;
+    }
+  }
+  
